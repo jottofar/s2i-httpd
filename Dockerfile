@@ -39,8 +39,7 @@ RUN mkdir -p ${HOME}/htdocs && \
 
 #RUN mkdir /opt/rh/httpd24/root/var/www/html/test && \
 #    echo "Sample page" > /opt/rh/httpd24/root/var/www/html/test/index.html
-RUN mkdir /opt/app-root/htdocs/test && \
-    echo "Sample page" > /opt/app-root/htdocs/test/index.html
+RUN echo "Sample page" > /opt/app-root/htdocs/test.html
 
 COPY httpd.conf ${HOME}/httpd.conf
 
