@@ -41,7 +41,8 @@ RUN echo "Sample page" > /var/www/html/test.html
 
 COPY httpd.conf ${HOME}/httpd.conf
 
-EXPOSE ${PORT}
+#EXPOSE ${PORT}
+EXPOSE 8080
 
 # Copy into place S2I builder scripts, the run script, and label the Docker
 # image so that the 's2i' program knows where to find them.
